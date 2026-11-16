@@ -61,8 +61,12 @@ p { margin: 0; }
 .hero h1 mark { background: var(--land); color: var(--text); border-radius: 14px; padding: 0 0.18em; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
 .hero .lead { color: rgba(255, 255, 255, 0.9); margin-top: 18px; }
 .hero-text { display: flex; flex-direction: column; gap: 22px; padding-bottom: 64px; min-width: 0; }
-.hero-shot { align-self: end; justify-self: center; width: min(360px, 100%); }
-.hero-shot img { border-radius: 28px 28px 0 0; box-shadow: 0 30px 60px rgba(26, 18, 80, 0.35); }
+.hero-shot { align-self: end; justify-self: center; width: min(340px, 100%); margin-bottom: -90px; }
+
+/* An iPhone drawn in CSS around a real 1320 × 2868 capture (shown at 720 px wide, sharp on Retina screens). */
+.device { position: relative; background: #11131C; border-radius: 15% / 7%; padding: 3.2%; box-shadow: 0 28px 60px rgba(26, 18, 80, 0.32), inset 0 0 0 2px #3A3D50; }
+.device img { width: 100%; height: auto; border-radius: 12.5% / 5.8%; image-rendering: auto; }
+.device::after { content: ""; position: absolute; top: 4.6%; left: 50%; width: 28%; height: 2.6%; transform: translateX(-50%); background: #000; border-radius: 999px; }
 .badges { display: flex; flex-wrap: wrap; gap: 10px; }
 .badge { background: rgba(255, 255, 255, 0.16); border: 1px solid rgba(255, 255, 255, 0.35); border-radius: 999px; padding: 6px 14px; font-size: 14px; font-weight: 700; }
 
@@ -90,8 +94,12 @@ p { margin: 0; }
 .map span { color: var(--muted); font-size: 15px; }
 .free { font-size: 12px; font-weight: 800; color: #17603F; background: #E3F4EC; border-radius: 999px; padding: 2px 8px; margin-left: 6px; white-space: nowrap; }
 
-.shots { display: grid; gap: 18px; grid-template-columns: repeat(4, 1fr); }
-.shots img { border-radius: 20px; box-shadow: 0 12px 30px rgba(40, 50, 120, 0.16); }
+.shots { display: grid; gap: 28px; grid-template-columns: repeat(4, 1fr); }
+.shot { margin: 0; display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+.shot .device { box-shadow: 0 18px 40px rgba(40, 50, 120, 0.22), inset 0 0 0 2px #3A3D50; }
+.shot figcaption { display: flex; flex-direction: column; gap: 2px; text-align: center; }
+.shot figcaption strong { font-size: 18px; }
+.shot figcaption span { color: var(--muted); font-size: 15px; line-height: 1.4; }
 
 .parents { background: var(--surface); }
 .price { display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: center; background: linear-gradient(150deg, var(--purple), var(--purple-2)); color: #fff; border-radius: 28px; padding: 32px; margin-top: 32px; }
@@ -124,7 +132,7 @@ p { margin: 0; }
 @media (max-width: 860px) {
   .hero .wrap { grid-template-columns: 1fr; padding-top: 44px; }
   .hero-text { padding-bottom: 0; }
-  .hero-shot { width: min(300px, 100%); }
+  .hero-shot { width: min(260px, 100%); margin-bottom: -60px; }
   .shots { grid-template-columns: repeat(2, 1fr); }
   .price { grid-template-columns: 1fr; }
 }
