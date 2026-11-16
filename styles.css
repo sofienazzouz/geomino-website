@@ -65,7 +65,8 @@ p { margin: 0; }
 
 /* An iPhone drawn in CSS around a real 1320 × 2868 capture (shown at 720 px wide, sharp on Retina screens). */
 .device { position: relative; background: #11131C; border-radius: 15% / 7%; padding: 3.2%; box-shadow: 0 28px 60px rgba(26, 18, 80, 0.32), inset 0 0 0 2px #3A3D50; }
-.device img { width: 100%; height: auto; border-radius: 12.5% / 5.8%; image-rendering: auto; }
+.device picture { display: block; }
+.device img { display: block; width: 100%; height: auto; border-radius: 12.5% / 5.8%; image-rendering: auto; }
 .device::after { content: ""; position: absolute; top: 4.6%; left: 50%; width: 28%; height: 2.6%; transform: translateX(-50%); background: #000; border-radius: 999px; }
 .badges { display: flex; flex-wrap: wrap; gap: 10px; }
 .badge { background: rgba(255, 255, 255, 0.16); border: 1px solid rgba(255, 255, 255, 0.35); border-radius: 999px; padding: 6px 14px; font-size: 14px; font-weight: 700; }
