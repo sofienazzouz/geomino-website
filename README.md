@@ -11,10 +11,10 @@ Colours = the app's tokens (`Geomino/Views/Components/Theme.swift`, `SplashView.
 
 Live: https://sofienazzouz.github.io/geomino-website/
 
-## Before / after the App Store release
+## App Store link
 
-Search for `TODO` and replace the "Bientôt sur l'App Store" / "Coming soon" buttons with the App Store link
-`https://apps.apple.com/app/id6835195947`.
+Geomino is live: the download buttons (hero + "Disponible sur l'App Store" section, FR + EN) link to
+`https://apps.apple.com/app/id6835195947`, which opens each visitor's own country store.
 
 ## Keep it in sync with the app
 

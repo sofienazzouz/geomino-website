@@ -72,9 +72,10 @@ p { margin: 0; }
 .badge { background: rgba(255, 255, 255, 0.16); border: 1px solid rgba(255, 255, 255, 0.35); border-radius: 999px; padding: 6px 14px; font-size: 14px; font-weight: 700; }
 
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; padding: 12px 24px; border-radius: 16px; font-weight: 800; font-size: 17px; text-decoration: none; border: 0; }
-.btn-store { background: #11131C; color: #fff; align-self: flex-start; }
+.btn-store { background: #11131C; color: #fff; align-self: flex-start; padding: 10px 22px 10px 18px; }
+.btn-store svg { flex: none; }
 .btn-store small { display: block; font-size: 11px; font-weight: 600; opacity: 0.8; line-height: 1; }
-.btn-store span { line-height: 1.15; text-align: left; }
+.btn-store span { line-height: 1.15; text-align: left; font-size: 18px; }
 .btn-store:hover { color: #fff; background: #000; }
 .btn-primary { background: var(--purple); color: #fff; }
 .btn-primary:hover { background: var(--purple-text); color: #fff; }
@@ -137,3 +138,12 @@ p { margin: 0; }
   .shots { grid-template-columns: repeat(2, 1fr); }
   .price { grid-template-columns: 1fr; }
 }
+
+/* Download call to action at the bottom of the home page */
+.download { padding-top: 0; }
+.cta { background: linear-gradient(150deg, var(--purple), var(--purple-2)); color: #fff; border-radius: 28px; padding: 48px 32px;
+       display: flex; flex-direction: column; align-items: center; gap: 16px; text-align: center; }
+.cta h2 { color: #fff; }
+.cta p { color: rgba(255, 255, 255, 0.9); max-width: 36em; }
+.cta .btn-store { align-self: center; background: var(--land); color: var(--text); }
+.cta .btn-store:hover { background: #FFC94A; color: var(--text); }
